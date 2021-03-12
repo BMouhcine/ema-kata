@@ -1,0 +1,43 @@
+<form #videoPost="ngForm" (ngSubmit)="onSubmit(videoPost.value)">
+<input type="text" name="tags" ngModel placeholder="Tags"> <br>
+<!--<input type="text" name="level" ngModel placeholder="Level"> <br>-->
+<select ngModel name="level">
+  <option value="" selected></option>
+  <option value="ELEMENTARY">ELEMENTARY</option>
+  <option value="EASY">EASY</option>
+  <option value="MEDIUM">MEDIUM</option>
+  <option value="HARD">HARD</option>
+</select>
+<button type="submit">Find videos</button>
+<input type="reset">
+</form>
+
+<div class="col-md-6">
+<h2> Videos </h2>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+
+</style>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th class="hidden">Id</th>
+    <th>Title</th>
+    <th>Duration</th>
+    <th>Level</th>
+    <th>Tags</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let video of videos">
+    <td class="hidden">{{ video.id }}</td>
+    <td>{{ video.title }}</td>
+    <td>{{ video.duration }}</td>
+    <td>{{ video.level }}</td>
+    <td>{{ video.tags }}</td>
+  </tr>
+  </tbody>
+</table>
+</div>
