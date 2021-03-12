@@ -2,13 +2,13 @@
 Ce repo contient une amélioration d'un petit projet : Videothèque.
 Il s'agit de l'implémentation d'une méthode **retrieveVideosByTagAndLevel** en suivant les étapes ci-après:  
 
-1: Cloner le projet [https://github.com/ahouzi/ema-kata](https://github.com/ahouzi/ema-kata)
-2: Créer une branche à partir du master
-3: Implémenter la méthode retrieveVideosByTagAndLevel
-4: Pusher la nouvelle branche
-5: Créer une classe pour tester tous les scénarios
-6: Faire un pull request avec le master
-7:Créer les tests cucumber pour la fonctionnalité.
+1: Cloner le projet [https://github.com/ahouzi/ema-kata](https://github.com/ahouzi/ema-kata)  
+2: Créer une branche à partir du master  
+3: Implémenter la méthode retrieveVideosByTagAndLevel  
+4: Pusher la nouvelle branche  
+5: Créer une classe pour tester tous les scénarios  
+6: Faire un pull request avec le master  
+7:Créer les tests cucumber pour la fonctionnalité.  
  
  Ensuite, créer une application *Angular* pour fournir une interface utilisateur permettant de rechercher les videos par *Tags* et/ou *Niveau*.  
  
